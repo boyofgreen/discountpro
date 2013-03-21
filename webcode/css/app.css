@@ -1,0 +1,682 @@
+
+
+
+
+html {background-image:url('../img/wood-flore.jpg');
+		background-position: 0 -233px;
+		background-repeat: no-repeat; }
+		
+html,body, input, button {
+	font-family: Prelude, Prelude Medium, Segoe UI, Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+cursor: default;
+
+}
+		
+
+    body {
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
+	  touch-callout:none;
+	  }
+	  
+	  		
+/* define the flex for frames */
+
+.container {
+	
+	display: -webkit-box; 
+    display: -ms-flexbox; 
+	-webkit-box-align: stretch; 
+	-webkit-box-orient: horizonal;
+    -ms-flexbox-align: stretch; 
+	-ms-flexbox-orient: horizonal;
+	/*temp width */ width: 1004px;
+	xoverflow: hidden;
+	height: 580px;
+}
+
+.frames {
+	
+	xborder: 1px solid red;
+	-webkit-box-flex: 1;
+    -ms-flex: 1
+	
+}
+
+.split-two {
+	
+	xborder: 1px solid blue;	
+	
+}
+
+.frames-wrapper {
+	-webkit-box-flex: 1;
+    -ms-flex: 1;
+	padding: 5% 10%;
+
+}
+
+
+.calc-body{
+
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 15px;
+	padding: 10px;
+	color: white;
+	margin: 0 5%;
+	background-image: url('../img/test-layer.png');
+	background-position: 0px -130px;
+	xborder: 3px solid green;
+	xheight: 525px;
+	xwidth: 370px;
+	
+}
+
+
+.recipt-body {
+	
+
+position: relative;
+-webkit-border-image: url('../img/border-3.png')18 24 24 24 stretch stretch;
+-webkit-box-sizing: border-box;
+-ms-flexbox-sizing: border-box;
+border-width: 24px;
+box-sizing: border-box;
+margin-top: 10px;
+font-family: "Courier New", "Courier", "Arial","Helvetica", "sans-serif";
+height: 477px;
+-webkit-box-flex: 1;
+-ms-flex: 1;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+width: 375px;
+background:  white;
+padding: 5px;
+box-shadow: rgba(0, 0, 0, 0.2) 2px 5px ;
+
+	
+	
+}
+
+.receipt-list-wrapper {
+	 height: 320px;
+	 xoverflow: hidden; 
+	
+	
+}
+
+
+/*tabs */
+
+.tabSet-tab {
+	
+	
+	-webkit-box-flex: 1;
+width: 0px;
+-webkit-border-image: url(../img/radiobutton.png) 74 17 482 17;
+-ms-border-image: url(../img/radiobutton.png) 74 17 482 17;
+height: 40px;
+padding: 8px 0 9px 0;
+margin: -3px 0;
+text-align: center;
+-webkit-box-sizing: border-box;
+-ms-flexbox-sizing: border-box;
+border-width: 0px 1px;
+box-sizing: border-box;
+}
+
+.tabSet-tab.active {
+	
+	
+	-webkit-box-flex: 1;
+    	-ms-flex: 1;
+width: 0px;
+-webkit-border-image: url(../img/radiobutton.png) 111 17 445 17;
+-ms-border-image: url(../img/radiobutton.png) 111 17 445 17
+}
+
+
+.tabSet-body{
+	display: -webkit-box;
+	-webkit-box-sizing: border-box;
+    -ms-flexbox-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-pack: start;
+	-webkit-box-align: stretch;
+	-webkit-box-orient: horizontal;
+    -ms-flexbox-pack: start;
+	-ms-flexbox-align: stretch;
+	-ms-flexbox-orient: horizontal
+
+}
+
+
+
+
+/*list */
+
+.list-devider {
+	-webkit-box-pack: start;
+	-webkit-box-align: center;
+	-webkit-box-orient: horizontal;
+    -ms-flexbox-pack: start;
+	-ms-flexbox-align: center;
+	-ms-flexbox-orient: horizontal;
+	display: -webkit-box;
+    display: -ms-flexbox;
+	-webkit-box-sizing: border-box;
+    -ms-flexbox-sizing: border-box;
+	box-sizing: border-box;
+	
+	
+	
+}
+
+.list-devider-caption {
+	xoverflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 12pt;
+	color: #3A8BCB;
+	-webkit-box-flex: .1;
+    -ms-flex: .1;
+	text-transform: uppercase;
+	
+}
+
+.list-devider-bar {
+	
+	border-left-width: 6px;
+	margin-left: 0px;
+	-webkit-box-flex: 1000;
+    -ms-flex: 1000;
+	min-width: 3px;
+	-webkit-border-image: url('../img/divider.png') 0 0 0 0 repeat repeat;
+	-ms-border-image: url('../img/divider.png') 0 0 0 0 repeat repeat;
+	height: 4px;
+	margin: 13px 0px;
+
+}
+
+.picker{
+	-webkit-box-orient: horizontal;
+    -ms-flexbox-orient: horizontal;
+	display: -webkit-box;
+    display: -ms-flexbox;
+	-webkit-box-sizing: border-box;
+    -ms-flexbox-sizing: border-box;
+	border: none;
+	margin: 0;
+	outline: none;
+	background-color: transparent;
+	padding: 0;
+	width: 100%;
+	-webkit-appearance: caret;
+	-webkit-box-flex: 1;
+    -ms-appearance: caret;
+	-ms-flex: 1;
+	cursor: pointer;
+	font-size: .9rem;
+	x-webkit-box-pack: center;
+}
+.recipt-settings-controle, .recipt-settings-discount {
+	-webkit-box-orient: horizontal;
+	display: -webkit-box;	
+	-ms-flexbox-orient: horizontal;
+	display: -ms-flexbox;	
+}
+
+.taxPicker-input-wrapper, .totalDiscount-input-wrapper{
+	-webkit-box-flex: 1;
+    -ms-flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+
+	
+}
+.recipt-settings-controlText, .recipt-settings-controlText {
+	margin-top: 8px;
+	margin-right: 10px
+}
+
+.picker-input-input{
+	
+
+	border: none;
+	margin: 0;
+	outline: none;
+	background-color: transparent;
+	padding: 0;
+	width: 100%;
+	-webkit-appearance: caret;
+
+    -ms-appearance: caret;
+
+	cursor: pointer;
+	font-size: .9rem;
+	box-sizing: border-box;
+	color: #3A8BCB;
+	font-size: .9em;
+	font-family: Prelude, Prelude Medium, Segoe UI, Arial, Helvetica, Sans-Serif;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	
+}
+
+.discount-input {
+width: 80%;
+
+}
+
+
+
+#takePic {
+
+	background-color: #2071BB;
+color: white;
+height: 70%;
+width: 14%;
+border: 2px solid #2071BB;
+border-radius: 4px 4px;
+background: #2071BB url(/img/camera.png) center no-repeat;
+background-size: 80%;
+margin-left: 5%;
+
+}
+
+#takePic:active {
+    background-color: #3A8BCB;
+}
+
+.picklists .picker-input-input {color: #fff}
+
+.picker-input{
+	
+xborder-width: 14px;
+border-style: solid;
+border-color: transparent;
+-webkit-box-sizing: border-box;
+-ms-flexbox-sizing: border-box;
+font-size: .9rem;
+box-sizing: border-box;
+-webkit-box-flex: 1;
+-ms-flex: 1;
+}
+
+.picker-input-focus {
+	-webkit-border-image: url(../img/input-focus.png) 14 14;
+    border-image: url(../img/input-focus.png) 14 14;
+    /*background: white url(../img/input-focus.png) no-repeat;*/
+
+
+}
+
+
+body .picklists .picker-input-input {
+border-width: 1px;
+    xbox-shadow: rgba(0,0,0,.7) 5px 5px inset;
+    xheight: 30px;
+    padding: 5px;
+    padding-right: 0px;
+
+
+}
+
+body .picklists .picker-input-input:focus {
+    background: white;
+    border-radius: 25px;
+    
+    color: #3a8bcb;
+}
+
+.picker-input-focus .picker-input-input, .picklists .picker-input-input:focus {
+	color: white;
+	
+}
+
+.addButton {
+-webkit-box-flex: 1;
+-ms-flex: 1;
+}
+
+.addButton-button {
+	background-color: #2071BB;
+color: white;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+padding: 4px 8px;
+min-width: 14px;
+min-height: 20px;
+-webkit-border-image: url(../img/button-up.png) 4 4 4 4 stretch stretch;
+-ms-border-image: url(../img/button-up.png) 4 4 4 4 stretch stretch;
+border-width: 4px;
+border-radius: 5px;
+margin: 3px;
+width:100%;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.addButton-button:active, .addButton-button.pressed {
+    -webkit-border-image: url(../img/button-down.png) 4 4 4 4 stretch stretch;
+    -ms-border-image: url(../img/button-down.png) 4 4 4 4 stretch stretch;
+    background-color: #3A8BCB;
+
+}
+
+
+.discount-input, .price-input {
+	text-align: center;
+	xwidth: 340px; 
+	font-size: 36px;
+	
+	
+}
+
+
+ .receipt-list-item {
+	
+	-webkit-box-flex: 1;
+    -ms-flex: 1;
+	display: block;
+	xwidth: 100%;
+	
+}
+.recipt-list {
+	
+	-webkit-box-flex: 1;
+    -ms-flex: 1;
+	xdisplay: -webkit-box;
+	width: 100%;
+	
+}
+.receipt-list-item-name, .receipt-total-total {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	xoverflow: hidden;
+	xmargin-right: 3px;
+	
+}
+.receipt-list-item-price {
+	
+	x-webkit-box-flex: 1;
+	
+}
+.receipt-list-item-wrapper, .recipt-list-contentBox {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	
+}
+
+.receipt-list-item-wrapper div {
+	padding: 7px 0;
+	
+}
+.receipt-list-item-wrapper.pressed div {
+	color: white; 
+	background-color: #FEC403;
+	text-shadow: 1px 1px 0px #000;
+}
+
+
+ .receipt-total{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	height:25px; 	
+	
+ }
+
+/*try to set position */
+
+/*.picker-positioner{
+	position: absolute;
+	border: 1px solid red;
+	height: 100px;
+	width: 100px;
+	
+	
+}
+*/
+
+
+
+.picker-select {
+	width: 20px;
+    height:  20px;
+	xbackground: rgba(0, 0, 0, 0);
+	xheight:50px;
+	xborder: 10px solid transparent;
+	xborder-top: 20px; border-bottom: 20px;
+	x-webkit-border-radius: 10px;
+	-webkit-border-image: url('../img/plus4.png') 18 10 18 10 stretch stretch ;
+
+	xdisplay: block;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    xwidth: 240px;
+   xheight: 34px;
+   overflow: hidden;
+   xbackground: url(../img/plus4.png) no-repeat right #ddd;
+   xborder: 1px solid #ccc;
+   xbackground-clip: border-box;
+   xbackground-origin: padding-box;
+   border:  15px solid white;
+   border-radius: 15px;
+   border-top-color:  #3a8bcb;
+   border-right-color:  #3a8bcb;
+   border-bottom-color: #468DC4;
+   border-left-color: #6199C6;
+	
+}
+
+/*handle the scroll of the wrapper so we don't need iscroll*/
+#wrapper {
+overflow-y: scroll;
+overflow-x: hidden;
+-ms-scroll-chaining: none;
+
+}
+
+.shim-modal {
+	
+   display: none;
+   -webkit-transform-style: preserve-3d;
+   -ms-transform-style: preserve-3d;
+   background: rgba(0, 0, 0, 0);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   z-index: 5;
+   right: 0;
+
+
+	
+	
+}
+
+.shim-close{
+	   background: rgba(0, 0, 0, 0);
+		  width: 100%;
+	   height: 100%;
+	   position: absolute;
+	   z-index: 5;
+	   right: 0;
+	
+}
+
+.active {
+   display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+   display: -ms-flexbox;
+  -ms-flexbox-orient: horizontal;
+  -ms-flexbox-pack: center;
+  -ms-flexbox-align: center;
+}
+
+.start-anmi {
+		 background: rgba(0, 0, 0, 0.5);
+		-webkit-transition: background 600ms ease-in 200ms; 
+        -ms-transition: background 600ms ease-in 200ms; 
+
+}
+
+
+/*shim menu */
+
+
+
+.shim-content {
+
+border: 1px solid #5e5d5d;
+background: rgba(77, 76, 76, 1);
+padding: 14px;
+color: white;
+width: 90%;
+max-height: 600px;
+   -webkit-border-radius: 10px;
+     -ms-border-radius: 10px;
+   opacity: 0;
+
+	
+}
+
+.shim-content-settings {margin-bottom: 200px;}
+
+.shim-modal.start-anmi .shim-content {
+    opacity:1;
+     -webkit-transition: opacity 100ms ease-in 00ms;
+     -ms-transition: opacity 100ms ease-in 00ms;
+}
+
+
+.shim-content h3 {margin: 10px 0 10px 10px; text-shadow: 1px 1px 0px #000;}
+
+.shim-selection-list {
+	
+	background: #fff;
+	color: #000;
+	padding: 1px;
+	-webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
+.shim-selection-list .pressed{
+    color: white; background-color: #FEC403;text-shadow: 1px 1px 0px #000}
+.shim-selection-list-item {
+	
+	padding: 10px;
+	border-bottom: 1px solid #DDD;
+
+}
+
+.shim-selection-list-item:last-child{
+	
+	border: none;
+}
+
+
+
+
+.recipt-settings {
+	
+	
+	xheight: 0px;
+	xoverflow: hidden;
+}
+
+
+.control-state-showing {
+	
+	height: auto;
+	
+}
+
+/*let the page scroll the input into view on device  */
+
+.pageScroll-ready {
+   min-height: 1000px  /*min so it doesn't do anything in portrrite  */
+	
+}
+
+.recipt-controls-control {
+	
+	
+	background-image: url('../img/Wrench.png');
+	background-repeat: no-repeat;
+	background-position: right 0px;
+	height:22px;
+
+}
+
+
+
+
+.pic-container img {
+ 
+    width: 40%;
+    text-align: center;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 850px) {
+
+    html {background-position: 0 0px; }
+	.container{
+		height: 1004px;
+		display: block;
+		width: 600px;
+		
+	}
+.frames-wrapper {
+	padding: 1% 10%;
+	
+}
+.receipt-list-wrapper {
+	height: 270px;
+}
+.recipt-body{
+height: 427px;	
+width: auto;
+	
+}
+}
+
+
+@media screen and (min-width: 850px) {
+
+	.container{
+	/*temp width */ width: 1004px;
+	xoverflow: hidden;
+	height: 580px;
+
+		
+	}
+.frames-wrapper {
+	padding: 5% 10% 0 10%;
+	
+}
+.receipt-list-wrapper {
+	height: 320px;
+}
+.recipt-body{
+height: 477px;
+
+	
+}	
+	
+	
+	
+}
+
+
+
+
